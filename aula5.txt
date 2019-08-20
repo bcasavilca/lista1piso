@@ -1,0 +1,39 @@
+algoritmo "exercicio_A5_1"
+declare 
+p1,p2,p3,p4,p5: inteiro
+inicio
+escreva("entre com o preço 1: ")
+leia(p1)
+escreva("entre com o preço 2: ")
+leia(p2)
+escreva("entre com o preço 3: ")
+leia(p3)
+escreva("entre com o preço 4: ")
+leia(p4)
+escreva("entre com o preço 5: ")
+leia(p5)
+
+media < - p1+p2+p3+p4+p5 / 2
+
+se (p1 > media) entao
+escreva("",p1)
+fimse
+se (p2 > media) entao
+escreva("",p2)
+fimse
+se (p3 > media) entao
+escreva("",p3)
+fimse
+se (p4 > media) entao
+escreva("",p4)
+fimse
+se (p5 > media) entao
+escreva("",p5)
+
+
+
+fimse
+fimalgoritmo
+    
+
+

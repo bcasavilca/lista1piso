@@ -1,0 +1,81 @@
+algoritmo "exercicio_A4_1"
+declare
+dolar,euro,reais: real
+inicio
+escreva("entre com a cotacao do dólar: ")
+leia(dolar)
+escreva("entre com a cotacao do euro: ")
+leia(euro)
+escreva("entre com o valor em reais: ")
+leia(reais)
+escreval("valor em dolar: ",reais / dolar:6:2)
+escreval("valor em euro: ",reais / euro:6:2)
+fimalgoritmo
+
+
+
+algoritmo "exercicio_A3_2"
+
+
+algoritmo "exercicio_A4_3"
+declare
+a,b: real
+inicio
+escreva("entre com o primeiro termo: ")
+leia(a)
+escreva("entre com o segundo termo: ")
+leia(b)
+  escreval("( ",a," + ",b, ")" )
+//escreval("(""",a," +",b," )","^2")
+fimalgoritmo
+
+algoritmo "exercicio_A4_4"
+x,y,z, maior: inteiro
+c1,c2,c3:caractere
+inicio
+escreva("entre com o nome do candidato 1: ")
+leia(c1)
+escreva("entre com o número de votos do candidato 1: ")
+leia(x)
+escreva("entre com o nome do candidato 2: ")
+leia(c2)
+escreva("entre com o número de votos do candidato 2: ")
+leia(y)
+escreva("entre com o nome do candidato 3: ")
+leia(c3)
+escreva("entre com o número de votos do candidato 3: ")
+leia(z)
+se (x <= y) e (y <= z) entao
+escreval("",c3, " foi o candidato vencedor")
+fimse
+se (x <= z) e (z <= y) entao
+escreval("",c2, " foi o candidato vencedor")
+fimse
+se (y <= x) e (x <= z) entao
+escreval("",c3, " foi o candidato vencedor")
+fimse
+se (y <= z) e (z <= x) entao
+escreval("",c1, " foi o candidato vencedor")
+fimse
+se (z <= y) e (y <= x) entao
+escreval("",c1, " foi o candidato vencedor")
+fimse
+se (z <= x) e (x <= y) entao
+escreval(" ",c2, " foi o candidato vencedor")
+fimse
+fimalgoritmo
+
+
+algoritmo "exercicio_A4_5"
+
+declare
+a,b: real
+inicio
+escreva("entre com o salario: ")
+leia(a)
+escreva("entre com o sexo(M) ou (F): ")
+leia(b)
+escreva("entre com a idade: ")
+leia(c)
+
+

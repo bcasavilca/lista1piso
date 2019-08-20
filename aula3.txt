@@ -1,0 +1,321 @@
+algoritmo "exercicio_A3_1"
+declare 
+numero: inteiro
+inicio
+escreva("entre com um número: ")
+leia(numero)
+se (numero mod 2 = 0) entao
+escreva("É par.")
+senao
+escreva("É impar")
+fimse
+fimalgoritmo
+    
+algoritmo "exercicio_A3_2" 
+declare
+x,y,z: inteiro
+inicio
+escreval("digite o primeiro número: ")
+leia(x)
+escreval("digite o segundo número: ")
+leia(y)
+escreval("digite o terceiro número: ")
+leia(z)
+se (x <= y) e (y <= z) entao
+escreval("maior valor: ",z)
+escreval("menor valor: ",x)
+fimse
+se (x <= z) e (z <= y) entao
+escreval("maior valor: ",y)
+escreval("menor valor: ",x)
+fimse
+se (y <= x) e (x <= z) entao
+escreval("maior valor: ",z)
+escreval("menor valor: ",y)
+fimse
+se (y <= z) e (z <= x) entao
+escreval("maior valor: ",x)
+escreval("menor valor: ",y)
+fimse
+se (z <= y) e (y <= x) entao
+escreval("maior valor: ",x)
+escreval("menor valor: ",z)
+fimse
+se (z <= x) e (x <= y) entao
+escreval("maior valor: ",y)
+escreval("menor valor: ",z)
+fimse
+fimalgoritmo
+
+algoritmo "exercicio_A3_3" 
+declare
+numero: inteiro
+inicio
+escreva("entre com um número: ")
+leia(numero)
+se (numero >= 0) entao
+escreva ("Este número é positivo")
+senao
+escreva ("Este número é negativo")
+fimse
+fimalgoritmo
+
+
+algoritmo "exercicio_A3_4"
+declare
+numero: inteiro
+metade: real
+inicio
+escreva("entre com um número: ")
+leia(numero)
+se (numero >= 20) entao
+metade <- numero / 2
+escreva("A metade é:",metade)
+senao
+escreva("Menor que 20")
+fimse
+fimalgoritmo
+
+
+algoritmo "exercicio_A3_5"
+declare
+primeironum: inteiro
+segundonum: inteiro
+
+inicio
+escreval("digite o primeiro número: ")
+leia(primeironum)
+escreval("digite o segundo número: ")
+leia(segundonum)
+se (primeironum + segundonum>20) entao
+escreva(primeironum + segundonum+8)
+fimse
+se (primeironum + segundonum<=20) entao
+escreva("resultado:",primeironum + segundonum-5)
+fimse
+fimalgoritmo
+
+
+algoritmo "exercicio_A3_6"
+declare
+numero: inteiro
+inicio
+escreva("entre com um número: ")
+leia(numero)
+se (numero mod 3 = 0) entao
+escreva("É multiplo de 3.")
+senao
+escreva("Não é multiplo de 3.")
+fimse
+fimalgoritmo
+
+
+algoritmo "exercicio_A3_7"
+declare
+salario,prestacao,valmax: real
+inicio
+escreval("entre com o valor do salario: ")
+leia(salario)
+escreval("entre com o valor da prestação: ")
+leia(prestacao)
+valmax <- salario * 0.3
+se (prestacao <= valmax) entao
+escreva("Emprestimo pode ser concedido.")
+fimse
+se  (prestacao > valmax) entao
+escreva("Emprestimo não pode ser concedido.")
+fimse
+fimalgoritmo
+
+algoritmo "exercicio_A3_8"
+declare
+numero: inteiro
+inicio
+escreva("entre com um número: ")
+leia(numero)
+se (numero >= 20) e (numero <= 90) entao
+escreva("Dentro do intervalo de 20 a 90.")
+senao
+escreva("Fora do intervalo de 20 a 90.")
+fimse
+fimalgoritmo
+
+
+algoritmo "exercicio_A3_9"
+declare
+nome,sexo: caractere
+idade: inteiro
+inicio
+escreval("escreva o nome: ")
+leia(nome)
+escreval("escolha o sexo (M) ou (F): ")
+leia(sexo)
+escreval("escreva a idade: ")
+leia(idade)
+se (sexo = "f") ou (sexo = "F") entao
+se (idade < 25) entao
+escreva("",nome, ", ACEITA")
+senao
+escreva("",nome, ", NÃO ACEITA")
+fimse
+senao
+escreva("",nome, ", NÃO ACEITO")
+fimse
+fimalgoritmo
+
+
+
+algoritmo "exercicio_A3_10"
+declare
+pri,seg,ter,qua,qui,maior,menor: inteiro
+inicio
+escreva("entre com o primeiro numero: ")
+leia(pri)
+escreva("entre com o segundo numero: ")
+leia(seg)
+escreva("entre com o terceiro numero: ")
+leia(ter)
+escreva("entre com o quarto numero: ")
+leia(qua)
+escreva("entre com o quinto numero: ")
+leia(qui)
+se (pri<>seg) e (pri<>ter) e (pri<>qua) e (pri<>qui) e (seg<>ter) e (seg<>qua) e (seg<>qui) e (ter<>qua) e (ter<>qui) e (qua<>qui) entao
+se (pri>seg) entao
+maior <- pri
+menor <- seg
+senao
+maior <- seg
+menor <- pri
+fimse
+se ( ter > maior) entao
+maior <- ter
+senao
+se ( ter < menor) entao
+menor  <- ter
+fimse
+fimse
+se ( qua > maior) entao
+maior <- qua
+senao
+se ( qua < menor) entao
+menor  <- qua
+fimse
+fimse
+se ( qui > maior) entao
+maior <- qui
+senao
+se ( qui < menor) entao
+menor  <- qui
+fimse
+fimse
+escreval("Maior valor: ",maior)
+escreva("Menor valor: ",menor)
+senao
+escreva("os valores devem ser diferentes")
+fimse
+fimalgoritmo
+
+
+algoritmo "exercicio_A3_11"
+declare 
+idade: inteiro
+inicio
+escreva("Qual sua idade: ")
+leia(idade)
+se(idade >= 65) entao
+escreva("É maior de 65 anos.")
+fimse
+se (idade >= 18) e (idade <65)entao
+escreva("É maior de idade.")
+fimse
+se (idade <= 18) entao
+escreva("É menor de idade.")
+fimse
+fimalgoritmo
+
+lgoritmo "exercicio_A3_12"
+declare
+nome:caractere
+nota1,nota2,media:real
+inicio
+escreval("entre com o nome do aluno: ")
+leia(nome)
+escreva("entre com a nota da PR1: ")
+leia(nota1)
+escreva("entre com a nota da PR2: ")
+leia(nota2)
+media <- nota1 + nota2 / 2
+se (media >= 7) entao
+escreva("Aprovado.")
+fimse
+se (media >= 3) e (media < 7) entao
+escreva("Recuperação Final.")
+fimse
+se (media < 3) entao
+escreva("Reprovado.")
+fimse
+fimalgoritmo
+
+algoritmo "exercicio_A3_13"
+declare
+salario: inteiro
+inicio
+escreva("entre com o valor do salario: ")
+leia(salario)
+se (salario <= 600) entao
+escreva("Isento.")
+fimse
+se (salario >= 600) e (salario <= 1200) entao
+escreva("Desconto de 20%.")
+fimse
+se (salario >=1200) e (salario <=2000) entao
+escreva("Desconto de 25%.")
+fimse
+se (salario > 2000) entao
+escreva("Desconto de 30%.")
+fimse
+fimalgoritmo
+
+algoritmo "exercicio_A3_14"
+declare
+compra,lucro: real
+inicio
+escreva("entre com o valor da compra: ")
+leia(compra)
+se (compra <= 20) entao
+lucro <- compra * 0.45
+escreva("valor de venda:", compra+lucro)
+senao
+lucro <- compra * 0.30
+escreva("valor de venda:", compra+lucro)
+fimse
+fimalgoritmo
+
+
+algoritmo "exercicio_A3_15"
+declare
+idade: real
+inicio
+escreva("entre com a idade do nadador: ")
+leia(idade)
+se (idade >= 5) e (idade <= 7)entao
+escreval("Infantil A")
+fimse
+se (idade >= 8) e (idade <= 10)entao
+escreval("Infantil B")
+fimse
+se (idade >= 11) e (idade <= 13)entao
+escreva("Juvenil A")
+fimse
+se (idade >= 14) e (idade <= 17)entao
+escreva("Juvenil A")
+fimse
+fimalgoritmo
+
+
+
+
+
+
+
+
