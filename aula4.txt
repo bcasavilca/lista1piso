@@ -67,15 +67,56 @@ fimalgoritmo
 
 
 algoritmo "exercicio_A4_5"
-
 declare
-a,b: real
+cont,menor_ida,maior_ida,media_sal,cont_f,cont_idade,salario,idade: inteiro
+sexo: caractere
 inicio
-escreva("entre com o salario: ")
-leia(a)
-escreva("entre com o sexo(M) ou (F): ")
-leia(b)
-escreva("entre com a idade: ")
-leia(c)
+maior_ida<-0
+menor_ida<-0
+media_sal <- 0
+cont_idade <- 0
+cont_f <- 0
+              enquanto (idade >=0) faca
+              escreva("entre com a idade: ")
+              leia(idade)
+              se (idade >=0) entao
+              escreva("entre com o sexo (M) ou (F): ")
+              leia(sexo)
+              escreva("entre com a salario: ")
+              leia(salario)
+              fimse
+limpatela
+ se (cont = 0) entao
+    maior_ida <- idade
+    menor_ida <- idade
+  senao
+    se (idade > maior_ida) entao
+    maior_ida <- idade
+    se (menor_ida > idade) entao
+    menor_ida <- idade
+  fimse
+  
+  se (sexo = "f") ou(sexo = "F") entao
+se (salario > 900) entao
+cont_f <- cont_f + 1
+fimse
+fimse
+fimenquanto
+//maior_ida <- idade
+//menor_ida <- idade
+//se (idade > maior_ida) entao
+//maior_ida <- idade
+//senao
+//se (idade < menor_ida) entao
+//menor_ida <- idade
+//fimse
+
+media_sal <- idade + media_sal
+cont_idade <- cont_idade + 1
+escreval("média do salário dos habitantes: ",media_sal/cont_idade:2:1)
+escreval("maior e menor idade dos habitantes: ")
+escreval("mulheres com salário superior a R$900,00: ",cont_f)
+fimalgoritmo
+
 
 
