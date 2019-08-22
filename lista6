@@ -1,0 +1,15 @@
+
+
+
+
+
+algoritmo "exercicio_A6_2"
+declare 
+x,y: real
+inicio
+escreval ("Calculo da função y(x)=3x+2")
+escreva ("Digite um valor para y(x): ")
+leia(x)
+y <- 3*x+2
+escreva ("O Resultado da função é: y(",x," )"," = ",y)
+fimalgoritmo
