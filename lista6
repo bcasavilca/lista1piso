@@ -28,3 +28,14 @@ fimalgoritmo
 
 algoritmo "exercicio_A6_3"
 declare
+consumo_medio,distancia,combustivel:real
+inicio
+escreva("Distância percorrida em KMs: ")
+leia(distancia)
+escreva("Combustivel abastecido em litros: ")
+leia(combustivel)
+
+consumo_medio <- distancia / combustivel
+escreval("O consumo médio é: Km/l ",consumo_medio:2:2)
+leia(distancia)
+fimalgoritmo
