@@ -1,0 +1,147 @@
+algoritmo "exercicio_A4_1"
+declare
+dolar,euro,reais: real
+inicio
+escreva("entre com a cotacao do dólar: ")
+leia(dolar)
+escreva("entre com a cotacao do euro: ")
+leia(euro)
+escreva("entre com o valor em reais: ")
+leia(reais)
+escreval("valor em dolar: ",reais / dolar:6:2)
+escreval("valor em euro: ",reais / euro:6:2)
+fimalgoritmo
+
+
+
+algoritmo "exercicio_A4_2"
+declare
+num1,num2: real
+inicio
+escreva("entre com o primeiro número: ")
+leia(num1)
+escreva("entre com o segundo número: ")
+leia(num2)
+escreval()
+escreval("O resultado da soma é: ",num1+num2)
+escreval("O resultado da subtração é: ",num1-num2)
+escreval("O resultado da multiplicação é: ",num1*num2)
+escreval("O resultado da divisão é: ",num1/num2)
+fimalgoritmo
+
+algoritmo "exercicio_A4_3"
+declare
+a,b,res:inteiro
+inicio
+escreval ("Calculo do quadrado da soma de dois termos")
+escreva ("Digite um valor para a: ")
+leia(a)
+escreva ("Digite um valor para b: ")
+leia(b)
+res <-(a+b)*2
+escreva ("O Resultado é: ",res," = 2b + 2ab + 2a")
+fimalgoritmo
+
+algoritmo "exercicio_A4_4"
+x,y,z, maior: inteiro
+c1,c2,c3:caractere
+inicio
+escreva("entre com o nome do candidato 1: ")
+leia(c1)
+escreva("entre com o número de votos do candidato 1: ")
+leia(x)
+escreva("entre com o nome do candidato 2: ")
+leia(c2)
+escreva("entre com o número de votos do candidato 2: ")
+leia(y)
+escreva("entre com o nome do candidato 3: ")
+leia(c3)
+escreva("entre com o número de votos do candidato 3: ")
+leia(z)
+se (x <= y) e (y <= z) entao
+escreval("",c3, " foi o candidato vencedor")
+fimse
+se (x <= z) e (z <= y) entao
+escreval("",c2, " foi o candidato vencedor")
+fimse
+se (y <= x) e (x <= z) entao
+escreval("",c3, " foi o candidato vencedor")
+fimse
+se (y <= z) e (z <= x) entao
+escreval("",c1, " foi o candidato vencedor")
+fimse
+se (z <= y) e (y <= x) entao
+escreval("",c1, " foi o candidato vencedor")
+fimse
+se (z <= x) e (x <= y) entao
+escreval(" ",c2, " foi o candidato vencedor")
+fimse
+fimalgoritmo
+
+
+algoritmo "exercicio_A4_5"
+declare
+cont,menor,maior,soma_salario,cont_mulheres,cont_habitantes,salario,idade: inteiro
+sexo: caractere
+inicio
+maior<- -5
+menor<- 200
+soma_salario <- 0
+cont_habitantes <- 0
+cont_mulheres <- 0
+
+enquanto (idade >=0) faca
+escreva("entre com a idade: ")
+leia(idade)
+se (idade >=0) entao
+escreva("entre com o sexo (M) ou (F): ")
+leia(sexo)
+escreva("entre com a salario: ")
+leia(salario)
+fimse
+limpatela
+
+
+soma_salario <- salario + soma_salario
+cont_habitantes <- cont_habitantes + 1
+
+
+    se (idade > maior) entao
+       maior <- idade
+    fimse
+    se (menor > idade) entao
+       menor <- idade
+    fimse
+
+se (sexo = "f") ou(sexo = "F") entao
+   se (salario > 900) entao
+     cont_mulheres  <- cont_mulheres + 1
+   fimse
+fimse
+fimenquanto
+
+
+escreval("média do salário dos habitantes: ",soma_salario/cont_habitantes:2:1)
+escreval("menor idade: ",menor, " maior idade: ",maior)
+escreval("mulheres com salário superior a R$900,00: ",cont_mulheres)
+fimalgoritmo
+
+
+
+algoritmo "exercicio_A4_6"
+declare
+idade:inteiro
+inicio
+escreva("qual a idade da pessoa?: ")
+leia(idade)
+se(idade >=18) e(idade <=24)   entao
+escreva("Tem um risco baixo")
+fimse
+se(idade >24) e(idade <=40)   entao
+escreva("Tem um risco médio")
+fimse
+se(idade >40) e(idade <=70)   entao
+escreva("Tem um risco alto")
+senao
+escreva("Não é possivel a aquisição da apólice")
+fimse
