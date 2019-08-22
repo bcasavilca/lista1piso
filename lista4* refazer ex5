@@ -1,4 +1,4 @@
-algoritmo "exercicio_A4_1"
+algoritmo "lista_4_exercicio_1"
 declare
 dolar,euro,reais: real
 inicio
@@ -14,7 +14,7 @@ fimalgoritmo
 
 
 
-algoritmo "exercicio_A4_2"
+algoritmo "lista_4_exercicio_ 2"
 declare
 num1,num2: real
 inicio
@@ -29,7 +29,7 @@ escreval("O resultado da multiplicação é: ",num1*num2)
 escreval("O resultado da divisão é: ",num1/num2)
 fimalgoritmo
 
-algoritmo "exercicio_A4_3"
+algoritmo "lista_4_exercicio_3"
 declare
 a,b,res:inteiro
 inicio
@@ -42,7 +42,7 @@ res <-(a+b)*2
 escreva ("O Resultado é: ",res," = 2b + 2ab + 2a")
 fimalgoritmo
 
-algoritmo "exercicio_A4_4"
+algoritmo "lista_4_exercicio_4"
 x,y,z, maior: inteiro
 c1,c2,c3:caractere
 inicio
@@ -79,7 +79,7 @@ fimse
 fimalgoritmo
 
 
-algoritmo "exercicio_A4_5"
+algoritmo "lista_4_exercicio_5"
 declare
 cont,menor,maior,soma_salario,cont_mulheres,cont_habitantes,salario,idade: inteiro
 sexo: caractere
@@ -104,19 +104,17 @@ limpatela
 
 soma_salario <- salario + soma_salario
 cont_habitantes <- cont_habitantes + 1
-
-
-    se (idade > maior) entao
-       maior <- idade
-    fimse
-    se (menor > idade) entao
-       menor <- idade
-    fimse
+se (idade > maior) entao
+maior <- idade
+fimse
+se (menor > idade) entao
+menor <- idade
+fimse
 
 se (sexo = "f") ou(sexo = "F") entao
-   se (salario > 900) entao
-     cont_mulheres  <- cont_mulheres + 1
-   fimse
+se (salario > 900) entao
+cont_mulheres  <- cont_mulheres + 1
+fimse
 fimse
 fimenquanto
 
@@ -128,7 +126,7 @@ fimalgoritmo
 
 
 
-algoritmo "exercicio_A4_6"
+algoritmo "lista_4_exercicio_6"
 declare
 idade:inteiro
 inicio
