@@ -1,4 +1,5 @@
-
+algoritmo "exercicio_A6_1"
+declare
 
 
 
@@ -13,3 +14,7 @@ leia(x)
 y <- 3*x+2
 escreva ("O Resultado da função é: y(",x," )"," = ",y)
 fimalgoritmo
+
+
+algoritmo "exercicio_A6_3"
+declare
