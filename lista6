@@ -1,5 +1,15 @@
 algoritmo "exercicio_A6_1"
 declare
+a,b:real
+inicio
+escreva("entre com o primeiro número: ")
+leia(a)
+escreva("entre com o segundo número: ")
+leia(b)
+
+escreva("A média é: ",a+b/2)
+fimalgoritmo
+
 
 
 
