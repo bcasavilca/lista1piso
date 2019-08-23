@@ -41,4 +41,26 @@ fimse
 fimpara
 fimalgoritmo
 
+algoritmo "exercicio_A5_3"
+declare 
+vet:vetor[1..6] de real
+i:inteiro
+busca:real
+
+inicio
+para i de 1 ate 6 faca
+vet[i]<-randi(10)
+escreval(vet[i])
+fimpara
+
+escreva("selecione o número para busca: ")
+leia(busca)
+
+para i de 1 ate 6 faca
+se (vet[i]=busca) entao
+escreval("o numero",busca,", está na posição:",i)
+fimse
+fimpara
+
+fimalgoritmo
 
