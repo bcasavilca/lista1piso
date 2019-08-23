@@ -81,14 +81,16 @@ fimalgoritmo
 
 algoritmo "lista_4_exercicio_5"
 declare
-cont,menor,maior,soma_salario,cont_mulheres,cont_habitantes,salario,idade: inteiro
+menor,maior,soma_salario,cont_mulheres,cont_habitantes,salario,idade: inteiro
 sexo: caractere
 inicio
-maior<- -5
-menor<- 200
+idade <- 0
+contador <- 0
 soma_salario <- 0
 cont_habitantes <- 0
 cont_mulheres <- 0
+maior <- 0
+menor <- 100
 
 enquanto (idade >=0) faca
 escreva("entre com a idade: ")
@@ -98,17 +100,18 @@ escreva("entre com o sexo (M) ou (F): ")
 leia(sexo)
 escreva("entre com a salario: ")
 leia(salario)
-fimse
+
 limpatela
 
-
-soma_salario <- salario + soma_salario
-cont_habitantes <- cont_habitantes + 1
 se (idade > maior) entao
 maior <- idade
 fimse
-se (menor > idade) entao
+se (idade < menor) entao
 menor <- idade
+fimse
+
+soma_salario <- salario + soma_salario
+cont_habitantes <- cont_habitantes + 1
 fimse
 
 se (sexo = "f") ou(sexo = "F") entao
@@ -116,11 +119,12 @@ se (salario > 900) entao
 cont_mulheres  <- cont_mulheres + 1
 fimse
 fimse
+
 fimenquanto
 
 
 escreval("média do salário dos habitantes: ",soma_salario/cont_habitantes:2:1)
-escreval("menor idade: ",menor, " maior idade: ",maior)
+escreval("menor idade:",menor, " e maior idade:",maior)
 escreval("mulheres com salário superior a R$900,00: ",cont_mulheres)
 fimalgoritmo
 
