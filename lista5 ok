@@ -1,0 +1,157 @@
+algoritmo "exercicio_A5_1"
+declare 
+soma,media,numeros: real
+i:inteiro
+vet:vetor[1..5] de inteiro
+inicio
+para i de 1 ate 5 faca
+escreva("entre com o preço",i,": ")
+leia(vet[i])
+soma <- soma + vet[i]
+media <- soma /5
+fimpara
+escreva("Preço(s) acima da média: ")
+para i de 1 ate 5 faca
+se (vet[i] > media) entao
+escreva(vet[i])
+fimse
+fimpara
+fimalgoritmo
+
+
+
+
+algoritmo "exercicio_A5_2"
+declare 
+k,busca:inteiro
+vet:vetor[1..15] de inteiro
+inicio
+escreval("Vetor com 15 numeros inteiros")
+para k de 1 ate 15 faca
+vet[k]<- randi(9)
+escreval(vet[k])
+fimpara
+escreva ("digite o valor a ser buscado ")
+leia (busca)
+escreva ("Está na posição")
+para k de 1 ate 15 faca
+se (busca = vet[k]) entao
+escreva (k)
+fimse
+fimpara
+fimalgoritmo
+
+algoritmo "exercicio_A5_3"
+declare 
+vet:vetor[1..6] de real
+i:inteiro
+busca:real
+
+inicio
+para i de 1 ate 6 faca
+vet[i]<-randi(10)
+escreval(vet[i])
+fimpara
+
+escreva("selecione o número para busca: ")
+leia(busca)
+
+para i de 1 ate 6 faca
+se (vet[i]=busca) entao
+escreval("o numero",busca,", está na posição:",i)
+fimse
+fimpara
+
+fimalgoritmo
+
+var
+matriz:vetor[1..5,1..5] de inteiro
+linha,coluna:inteiro
+
+inicio
+escreval("primeira matriz")
+para linha de 1 ate 5 faca
+para coluna de 1 ate 5 faca
+matriz[linha,coluna]<-randi(10)
+escreva(matriz[linha,coluna])
+fimpara
+escreval()
+fimpara
+escreval()
+escreval("segunda matriz")
+
+para linha de 1 ate 5 faca
+para coluna de 1 ate 5 faca
+
+se (linha + coluna) mod 2 = 0 entao
+escreva(matriz[linha,coluna])
+fimse
+
+fimpara
+escreval()
+fimpara
+fimalgoritmo
+
+
+algoritmo "exercicio_A5_4"
+declare 
+var
+matriz:vetor[1..5,1..5] de inteiro
+linha,coluna:inteiro
+
+inicio
+escreval("primeira matriz")
+para linha de 1 ate 5 faca
+para coluna de 1 ate 5 faca
+matriz[linha,coluna]<-randi(10)
+escreva(matriz[linha,coluna])
+fimpara
+escreval()
+fimpara
+escreval()
+escreval("segunda matriz")
+
+para linha de 1 ate 5 faca
+para coluna de 1 ate 5 faca
+
+se (linha + coluna) mod 2 = 0 entao
+escreva(matriz[linha,coluna])
+fimse
+
+fimpara
+escreval()
+fimpara
+fimalgoritmo
+
+
+
+algoritmo "exercicio_A5_5"
+declare
+matriz:vetor[1..5,1..5] de inteiro
+linha,coluna,soma,mult:inteiro
+
+inicio
+escreval("primeira matriz")
+para linha de 1 ate 5 faca
+para coluna de 1 ate 5 faca
+matriz[linha,coluna]<-randi(10)
+escreva(matriz[linha,coluna])
+fimpara
+escreval()
+fimpara
+escreval()
+
+para linha de 1 ate 5 faca
+para coluna de 1 ate 5 faca
+se (matriz[linha,coluna] mod 2 <> 0)   entao
+se linha+coluna > 6 entao
+soma <- (matriz[linha,coluna]* matriz[linha,coluna]) + soma
+fimse
+fimse
+fimpara
+fimpara
+escreval("a raiz quadrada da soma dos quadrados dos")
+escreval("numeros impares abaixo da diagonal segunda é:",raizq(soma))
+escreval()
+
+fimalgoritmo
